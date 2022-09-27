@@ -13,22 +13,6 @@ from utils.utils import Utils
 from werkzeug.utils import secure_filename
 from waitress import serve
 
-#   #return img
-# test_img_url = './raio-x.jpg'
-# explanation = explainer.explain_instance(Utils.imgToNpArray(test_img_url).astype('double'), model.predict,
-#                                         top_labels=3, hide_color=0, num_samples=1000)
-# print(explanation.top_labels)
-# print(explanation.local_pred)
-# temp_1, mask_1 = explanation.get_image_and_mask(explanation.top_labels[0], num_features=25,positive_only=False, hide_rest=False)
-# img = cv2.imread(test_img_url)
-# img = cv2.resize(img,(224,224),3)
-# img_np = np.array(img)
-
-# plt.figure(figsize=(8,8))
-# plt.imshow(mark_boundaries(img_np, mask_1,color=(0,255,255),mode='outer',background_label=0))
-# plt.axis('off')
-# plt.savefig('prediction.jpg')
-
 
 app = Flask(__name__)
 cors = CORS(app, resources={
